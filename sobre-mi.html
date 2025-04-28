@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Marius A. Nocturne</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7e/Moon_symbol.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Libre Baskerville', serif;
+      background: radial-gradient(ellipse at bottom, #0d0d0d 0%, #1a1a1a 100%);
+      background-size: cover;
+      overflow-x: hidden;
+      color: #f5f5f5;
+      transition: background 0.5s, color 0.5s;
+    }
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: transparent url('https://upload.wikimedia.org/wikipedia/commons/4/44/Star_field_Animation.gif') repeat;
+      background-size: cover;
+      opacity: 0.2;
+      animation: moveStars 100s linear infinite;
+    }
+    @keyframes moveStars {
+      from {background-position: 0 0;}
+      to {background-position: 10000px 5000px;}
+    }
+    header {
+      background: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    a {
+      color: #f5f5f5;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<header>
+  <h1>Sobre Marius A. Nocturne</h1>
+</header>
+
+<section>
+  <p>Bienvenido al rincón donde las palabras cobran vida.</p>
+  <p>Soy **Marius A. Nocturne**, un viajero de mundos imaginarios, un soñador de historias que habitan entre la luz y la sombra. Mis relatos, poemas y cuentos nacen de la necesidad de explorar el alma humana, sus anhelos, sus miedos y sus eternas búsquedas.</p>
+  <p>Este espacio está dedicado a compartir no solo mi obra, sino también las historias de quienes, como yo, sienten la pulsión de escribir.</p>
+  <p>Gracias por ser parte de esta travesía literaria.</p>
+  <br>
+  <a href=\"index.html\">← Volver a la página principal</a>
+</section>
+
+</body>
+</html>
