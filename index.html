@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marius A. Nocturne - Relatos y Poemas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Libre Baskerville', serif;
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            transition: background 0.5s, color 0.5s;
+        }
+        header {
+            background: #1a1a1a;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #bdbdbd;
+        }
+        nav {
+            background: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #f5f5f5;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #999;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .obra {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #bdbdbd;
+            padding-bottom: 1rem;
+        }
+        .boton-subir {
+            display: inline-block;
+            background: #333;
+            color: #f5f5f5;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border: 1px solid #f5f5f5;
+            margin-top: 2rem;
+            transition: background 0.3s, color 0.3s;
+        }
+        .boton-subir:hover {
+            background: #666;
+            color: #fff;
+        }
+        form {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        input, textarea {
+            padding: 0.8rem;
+            background: #1a1a1a;
+            border: 1px solid #bdbdbd;
+            color: #f5f5f5;
+            font-family: 'Libre Baskerville', serif;
+        }
+        input[type="submit"] {
+            background: #333;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #666;
+        }
+        footer {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Marius A. Nocturne</h1>
+    <p>"Donde cada palabra se convierte en un susurro del alma"</p>
+</header>
+
+<nav>
+    <a href="#mis-obras">Mis Obras</a>
+    <a href="#sube-tu-relato">Sube tu Relato</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="mis-obras">
+    <h2>Mis Obras</h2>
+    <div class="obra">
+        <h3>La Melodía del Silencio</h3>
+        <p>En la quietud de la noche, la ciudad suspira en acordes invisibles...</p>
+    </div>
+    <div class="obra">
+        <h3>Sombras de Tinta</h3>
+        <p>Los ecos de las palabras no dichas se acumulan en los rincones de la memoria...</p>
+    </div>
+    <div class="obra">
+        <h3>Suspiros de Invierno</h3>
+        <p>Cuando la nieve besa la tierra, el alma encuentra refugio en su blancura...</p>
+    </div>
+    <div class="obra">
+        <h3>El Guardián de las Estrellas</h3>
+        <p>Un viajero de galaxias olvidadas que protege los secretos del universo...</p>
+    </div>
+    <div class="obra">
+        <h3>Versos al Amanecer</h3>
+        <p>En cada rayo de sol, un poema escondido ilumina la esperanza...</p>
+    </div>
+</section>
+
+<section id="sube-tu-relato" style="text-align: center;">
+    <h2>¿Quieres compartir tu historia?</h2>
+    <form>
+        <input type="text" name="nombre" placeholder="Tu nombre o seudónimo" required>
+        <input type="text" name="titulo" placeholder="Título de tu relato" required>
+        <textarea name="relato" rows="6" placeholder="Escribe tu relato aquí..." required></textarea>
+        <input type="submit" value="Publicar Relato">
+    </form>
+</section>
+
+<footer id="contacto">
+    <p>Contacto: mariusanocturne@example.com | Redes Sociales</p>
+</footer>
+
+</body>
+</html>
